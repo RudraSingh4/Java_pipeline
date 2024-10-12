@@ -13,8 +13,8 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v3
         with:
-        #   distribution: 'temurin'
-            java-version: "21.0.2"
+          distribution: 'temurin'
+          java-version: "21.0.2"
 
 
       - name: Compile Java
