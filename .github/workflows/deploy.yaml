@@ -1,0 +1,22 @@
+name: Java Hello World Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+
+      - name: Compile Java
+        run: |
+          javac Main.java
+
+      - name: Run Java
+        run: |
+          java Main
